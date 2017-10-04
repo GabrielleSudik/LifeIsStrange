@@ -1,0 +1,56 @@
+﻿body {
+    padding-top: 0px;
+    background-color: #fff6f0;
+}
+
+#logoImage{
+    width: 200px;
+}
+
+div.page-header{
+    /*page header is a bootstrap thing but we are styling it here*/
+    /*we use div. so it only adjusts THAT SPECIFIC page header*/
+    /*not sure how this will affect a different page header that is also part of a div??*/
+    margin-top: 0px;
+    background-color: #e8d6cf;
+    padding-top: 3px;
+    margin-bottom: 0px;
+}
+
+/*NavBar*/
+
+nav#navvy.navbar.navbar-static-top{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff6f0;
+    background-color: #6a1525;
+}
+
+#navvy a{
+    color: #fff6f0;
+
+}
+
+#navvy a:hover{
+    background-color: #6a1525;
+}
+
+/*Trailer Section*/
+
+.mainSection{
+    background-image: url('../images/junkyard.jpg'); /*that's an image in our folders here*/
+    margin-top: 0px;
+    background-size: cover;
+}
+
+h1.container#trailer{
+    text-align: right;
+    background-color: rgbA(232,214,207,0.0); /*first no is red, second is green, third is blue. last number is transparency, it goes 0 to 1*/
+        /*there are several ways to name colors in css*/
+}
+
+/*Preview Section*/
+
+.previewThem{
+    margin: auto;
+}

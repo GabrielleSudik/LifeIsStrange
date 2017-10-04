@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!--in-class walkthrough of building a website-->
+    <!--internet is down tho :( -->
+
+    <title>
+        Life Is Strange
+    </title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--jquery thing. put before bootstrap-->
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="Bootstrap/js/bootstrap.js"></script>
+    <link href="Site.css" rel="stylesheet" /> <!--put your style sheet after bootstrap-->
+
+</head>
+<body>
+    <!--header-->
+    <div class="page-header">  <!--this is a bootstrap thing-->
+        <h1 class="container">  <!--so is this-->
+            <img id="logoImage" src="Images/rsz_transparentlogo.png" alt="site logo"/>
+            <!--we gave that image an ID so we can tinker with it on the css-->
+            <!--it's called #logoImage there-->
+        </h1>
+    </div>
+
+    <!--navigation bar-->
+    <nav class="navbar navbar-static-top" id="navvy"> <!--we chained two classes there. the ID is ours.--> 
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <!--we chained two classes there too. the aria-expanded will squish the menu into a hamburger-->
+                    <!--data-toggle and data-target go together. their values vary, but they work together.-->
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div> <!--that will collapse the menu when it's squished-->
+
+            <div id="navbar" class="navbar-collapse collapse"> <!--the ID navbar is affected by other things referencing #navbar-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About the Game</a></li>
+                    <li><a href="#VideoClips">Video Clips</a></li>
+                    <li><a href="#cheats">Game Cheats</a></li>
+                    <li><a href="http://www.lifeisstrange.com/talk" target="_blank">Talk About It</a></li>
+                </ul>
+            </div> <!--nav-collapse ends here-->
+
+        </div>
+         
+    </nav>
+
+    <!--Trailer section-->
+
+    <div class="jumbotron mainSection">
+        <h1 class="container" id="trailer"><iframe width="560" height="315" src="https://www.youtube.com/embed/AURVxvIZrmU" frameborder="1" allowfullscreen></iframe></h1>
+    </div>
+
+    <!--Thumbnails for Episodes-->
+
+    <div class="row container previewThem"> <!-- previewThem is our own-->
+        <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+                <img src="https://outhereinthefield.files.wordpress.com/2015/01/max7.png" alt="Preview of Episode 1"/>
+                <div class="caption">
+                    <h3>Episode One</h3>
+                    <p>The passage continues to see frequent usage, with Lorem Ipsum text appearing often in print, graphic and web designs.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Play Now</a></p>
+                </div>
+            </div>
+            </div>
+
+        <div class="col-md-4 col-sm-6">
+
+            <div class="thumbnail">
+                <img src="https://i.ytimg.com/vi/qxBEZ-_78Vs/maxresdefault.jpg" alt="Preview of Episode 2" />
+                <div class="caption">
+                    <h3>Episode Two</h3>
+                    <p>More recently the growth of web design has helped proliferate Lorem Ipsum across the internet as a placeholder for laying out websites and blogs– and in some cases the final content (don't let that be you!).</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Play Now</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+            <div class="thumbnail">
+                <img src="https://i.ytimg.com/vi/GmYGAjlpW6o/maxresdefault.jpg" alt="Preview of Episode 3" />
+                <div class="caption">
+                    <h3>Episode Three</h3>
+                    <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Play Now</a></p>
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+</body>
+</html>
+
+<!--you don't have to memorize all the bootstrap classes. check getbootstrap.com-->

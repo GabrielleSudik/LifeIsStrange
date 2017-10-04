@@ -1,0 +1,3 @@
+Jordan first said we can move all files into either Projects or WebSites. I've been moving everything to Projects.
+
+Jordan is now telling us to move them to WebSites instead.
