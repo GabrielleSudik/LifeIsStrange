@@ -3,7 +3,7 @@
     background-color: #fff6f0;
 }
 
-#logoImage{
+#logoImage{  /*# refers to ID. only use one time in html. classes can repeat.*/
     width: 200px;
 }
 
@@ -19,19 +19,22 @@ div.page-header{
 
 /*NavBar*/
 
-nav#navvy.navbar.navbar-static-top{
+nav#navvy.navbar.navbar-static-top{  /*this also relates to stuff with the navvy ID.
+                                         it affects the html labelled 
+                                         nav class="navbar navbar-static-top"
+                                     */
     margin-top: 0px;
     margin-bottom: 0px;
     color: #fff6f0;
     background-color: #6a1525;
 }
 
-#navvy a{
+#navvy a{  /*applies to the anchor tag where the navvy ID is*/
     color: #fff6f0;
 
 }
 
-#navvy a:hover{
+#navvy a:hover{ /*again, finds ID navvy, affects the hover of the anchor*/
     background-color: #6a1525;
 }
 
@@ -43,7 +46,7 @@ nav#navvy.navbar.navbar-static-top{
     background-size: cover;
 }
 
-h1.container#trailer{
+h1.container#trailer{ /*this finds the htlm with ID trailer, and affects the h1 container there*/
     text-align: right;
     background-color: rgbA(232,214,207,0.0); /*first no is red, second is green, third is blue. last number is transparency, it goes 0 to 1*/
         /*there are several ways to name colors in css*/
